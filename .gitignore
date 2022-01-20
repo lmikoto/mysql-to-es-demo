@@ -1,0 +1,6 @@
+.idea/
+*.log
+mysql/data
+canal-admin/data
+canal/data
+logs/

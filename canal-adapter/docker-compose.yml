@@ -1,0 +1,7 @@
+version: '3'
+services:
+  adapter:
+    build: .
+    volumes:
+      - "./conf:/opt/canal/adapter/conf"
+      - "./logs:/opt/canal/adapter/logs"

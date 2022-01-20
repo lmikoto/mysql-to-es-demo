@@ -1,0 +1,18 @@
+dataSourceKey: defaultDS
+destination: example
+groupId: g1
+esMapping:
+  _index: product
+  _type: _doc
+  _id: _id
+  upsert: true
+  sql: "SELECT
+         p.id AS _id,
+         p.title,
+         p.sub_title,
+         p.price,
+         p.pic
+        FROM
+         product p"
+  etlCondition: "where 1=1"
+  commitBatch: 3000
